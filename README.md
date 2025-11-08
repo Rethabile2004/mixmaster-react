@@ -1,6 +1,3 @@
-Here's a clean, professional, and well-structured **README.md** file based on your project — perfect for GitHub, Netlify, or any deployment platform:
-
-```markdown
 # MixMaster - The Ultimate Cocktail Explorer
 
 ![MixMaster Banner](https://www.figma.com/community/file/1255860657910062828)  
@@ -39,7 +36,7 @@ Here's a clean, professional, and well-structured **README.md** file based on yo
 
 ## Project Structure
 
-```
+
 src/
 ├── assets/
 │   └── wrappers/           # Styled component wrappers
