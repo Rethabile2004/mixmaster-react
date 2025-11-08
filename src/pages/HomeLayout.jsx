@@ -1,12 +1,20 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigation } from "react-router-dom";
 import { Navbar } from "../components/Navbar";
 
 const HomeLayout = () => {
+  // const navigation = useNavigation();
+  // console.log(navigation);
+  // const value = 'rethabile';
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <section className="page">
-      <Outlet/>
+        {navigation.state == 'loading' ?
+          <>
+            <div className="loading" />
+            <h3>loading...</h3>
+          </>
+          : <Outlet/>}
       </section>
 
     </div>

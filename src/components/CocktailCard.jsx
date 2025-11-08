@@ -1,7 +1,9 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/CocktailCard'
-import { Link } from 'react-router-dom'
+import { Link, useOutletContext } from 'react-router-dom'
 const CocktailCard = ({name,image,info,glass,id}) => {
+  // const value=useOutletContext();
+  // console.log(value.value)
   return (
     <Wrapper>
         <div className="img-container">

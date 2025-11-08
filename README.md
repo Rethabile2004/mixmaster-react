@@ -54,7 +54,7 @@ src/
 │   ├── HomeLayout.jsx
 │   └── SinglePageError.jsx
 └── main.jsx
-```
+
 
 ---
 
@@ -140,8 +140,3 @@ This project follows best practices from:
 MIT License © 2025 Rethabile Siase
 
 ---
-
-**Built with passion, styled with love, mixed with code.**
-
----
-```
