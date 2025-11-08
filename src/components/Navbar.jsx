@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components';
 const Wrapper = styled.nav`
   .nav-center{
-    background-color: #f0f0f0;
-    max-width: 1768px;
-    width: 960px;
+    background-color: var(--white);
+    max-width: var(--max-width);
+    width: var(--view-width);
     margin: 0 auto;
     padding: 1.5rem 2rem;
     display: flex;
@@ -22,6 +22,29 @@ const Wrapper = styled.nav`
     flex-direction: column;
     gap: 2px;
     margin-top: 1rem;
+  }
+  .nav-link{
+    color: var(--grey-500);
+    letter-spacing: 2px;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    transition: var(--transition);
+  }
+  .nav-link:hover{
+    color: var(--primary-500);
+  }
+.active{
+  color: var(--primary-500);
+}
+  @media (min-width: 768px){
+    .nav-center{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links{
+      margin-top: 0;
+      flex-direction: row;
+    }
   }
   `;
 export const Navbar = () => {

@@ -1,31 +1,31 @@
 import styled from 'styled-components';
 const Wrapper = styled.article`
-  background: var(--white);
-  box-shadow: var(--shadow-2);
-  transition: var(--transition);
-  display: grid;
+  background-color: var(--white);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out all;
+  box-shadow: 0 2px 6px -2 rgba(0,0,0,0.1);
   grid-template-rows: auto 1fr;
-  border-radius: var(--borderRadius);
-  :hover {
-    box-shadow: var(--shadow-4);
+  :hover{
+    box-shadow: 0 4px 19px rgba(0,0,0,0.1);
   }
-  img {
-    height: 15rem;
-    border-top-left-radius: var(--borderRadius);
-    border-top-right-radius: var(--borderRadius);
+
+  .img{
+  height: 15rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px
   }
-  .footer {
+
+  .footer{
     padding: 1.5rem;
-    h4,
-    h5 {
+    h4,h5{
       margin-bottom: 0.5rem;
     }
-    h4 {
+    h4{
       font-weight: 700;
     }
-    p {
-      margin-bottom: 1rem;
+    p{
       color: var(--grey-500);
+      margin-bottom: 1rem;
     }
   }
 `;

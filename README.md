@@ -137,7 +137,7 @@ This project follows best practices from:
 
 ## License
 
-MIT License © 2025 Your Name
+MIT License © 2025 Rethabile Siase
 
 ---
 
@@ -145,12 +145,3 @@ MIT License © 2025 Your Name
 
 ---
 ```
-
-### How to Use This README
-
-1. Save it as `README.md` in your project root
-2. Replace `your-username` and live demo link
-3. Add a screenshot or banner image (optional but recommended)
-4. Push to GitHub — instant beautiful repo!
-
-Let me know if you want a **dark version**, **badges**, or **contribution guidelines** added!
