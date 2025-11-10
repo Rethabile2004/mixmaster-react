@@ -3,7 +3,7 @@ import { Navbar } from "../components/Navbar";
 
 const HomeLayout = () => {
   const navigation = useNavigation();
-  console.log(navigation);
+  // console.log(navigation);
   // const value = 'rethabile';
   return (
     <div>

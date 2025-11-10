@@ -3,23 +3,33 @@ import { About, Cocktail, Error, HomeLayout, Landing, Newsletter, SinglePageErro
 import { loader as landingLoader } from "./pages/Landing";
 import { loader as singleCoctailLoader } from "./pages/Cocktail";
 import { action as newsletterAction } from "./pages/Newsletter";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5
+    }
+  }
+})
+
 const route = createBrowserRouter([
   {
     path: '/',
     element: <HomeLayout />,
-    errorElement:<Error/>,
+    errorElement: <Error />,
     children: [
       {
-        index:true,
-        errorElement:<SinglePageError/>,
+        index: true,
+        errorElement: <SinglePageError />,
         element: <Landing />,
-        loader:landingLoader
+        loader: landingLoader
       },
       {
         path: 'cocktail/:id',
         element: <Cocktail />,
-        errorElement:<SinglePageError/>,
-        loader:singleCoctailLoader
+        errorElement: <SinglePageError />,
+        loader: singleCoctailLoader
       },
       {
         path: 'about',
@@ -28,7 +38,7 @@ const route = createBrowserRouter([
       , {
         path: '/newsletter',
         element: <Newsletter />,
-        action:newsletterAction
+        action: newsletterAction
       }
     ]
   },
@@ -36,8 +46,11 @@ const route = createBrowserRouter([
 ])
 
 const App = () => {
-  return <RouterProvider router={route}>
-
-  </RouterProvider>;
+  return (
+    <QueryClientProvider client={queryClient} >
+      <RouterProvider router={route} />
+    </QueryClientProvider>
+    //
+  )
 };
 export default App;
