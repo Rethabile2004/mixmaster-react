@@ -1,9 +1,6 @@
 # MixMaster - The Ultimate Cocktail Explorer
 
-![MixMaster Banner](https://www.figma.com/community/file/1255860657910062828)  
-*A modern Single Page Application (SPA) built with React, React Router v6, Styled Components, and powered by TheCocktailDB API.*
-
-[Live Demo](https://your-mixmaster-app.netlify.app) | [Figma Design](https://www.figma.com/community/file/1255860657910062828)
+[Live Demo](https://mixmaster-rethabile.netlify.app/) | [Figma Design](https://www.figma.com/community/file/1255860657910062828)
 
 ---
 
@@ -68,7 +65,7 @@ src/
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/mixmaster.git
+git clone https://github.com/Rethabile2004/mixmaster-react.git
 cd mixmaster
 npm install
 ```
