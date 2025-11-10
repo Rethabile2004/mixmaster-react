@@ -23,13 +23,13 @@ const route = createBrowserRouter([
         index: true,
         errorElement: <SinglePageError />,
         element: <Landing />,
-        loader: landingLoader
+        loader: landingLoader(queryClient)
       },
       {
         path: 'cocktail/:id',
         element: <Cocktail />,
         errorElement: <SinglePageError />,
-        loader: singleCoctailLoader
+        loader: singleCoctailLoader(queryClient)
       },
       {
         path: 'about',

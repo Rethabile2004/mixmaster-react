@@ -30,15 +30,15 @@ const Newsletter = () => {
       </h3>
       <div className="form-row">
         <label htmlFor="name" className="form-label">name</label>
-        <input type="text" name="name"  id="name" className="form-input" defaultValue='Rethabile' />
+        <input type="text" name="name"  id="name" className="form-input" /* defaultValue='Rethabile'*/ />
       </div>
       <div className="form-row">
         <label htmlFor="lastName" className="form-label">last Name</label>
-        <input type="text" name="lastName" required id="lastName" className="form-input" defaultValue='Siase' />
+        <input type="text" name="lastName" required id="lastName" className="form-input" /*defaultValue='Siase'*/ />
       </div>
       <div className="form-row">
         <label htmlFor="email" className="form-label">email</label>
-        <input type="email" name="email"required  id="email" className="form-input" defaultValue='test@test.com' />
+        <input type="email" name="email"required  id="email" className="form-input" /*defaultValue='test@test.com'*/ />
       </div>
       
       <button disabled={isSubmitted} className="btn btn-block" style={{marginTop:'0.5rem'}}>{isSubmitted?"Submitting..":"Submit"}</button>
